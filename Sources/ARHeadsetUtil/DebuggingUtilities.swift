@@ -5,6 +5,7 @@
 //  Created by Philip Turner on 8/21/21.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 @usableFromInline internal let _doingDebugLabels = true
@@ -43,3 +44,5 @@ public func debugLabelConditionalReturn<T>(_ closure1: (() -> T), else closure2:
     return closure2()
     #endif
 }
+
+#endif
