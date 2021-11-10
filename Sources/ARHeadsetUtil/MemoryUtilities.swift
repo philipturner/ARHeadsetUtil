@@ -30,6 +30,8 @@ public extension Array {
     } }
 }
 
+#if canImport(CoreFoundation)
+
 public extension Range where Bound == Int {
     @inlinable @inline(__always)
     init(_ range: CFRange) {
@@ -41,6 +43,8 @@ public extension Range where Bound == Int {
         .init(location: lowerBound, length: upperBound - lowerBound)
     }
 }
+
+#endif
 
 @inlinable @inline(__always)
 public func makePointer<T>(to reference: UnsafeMutablePointer<T>) -> UnsafeMutablePointer<T> { reference }
