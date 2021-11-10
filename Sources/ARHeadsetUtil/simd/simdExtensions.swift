@@ -5,6 +5,7 @@
 //  Created by Philip Turner on 4/13/21.
 //
 
+#if canImport(simd)
 import simd
 
 // Vectorized math functions
@@ -822,3 +823,5 @@ public struct simd_bool4: Equatable {
         }
     }
 }
+
+#endif

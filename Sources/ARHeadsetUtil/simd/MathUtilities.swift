@@ -5,6 +5,7 @@
 //  Created by Philip Turner on 4/13/21.
 //
 
+#if canImport(simd)
 import simd
 
 /// Rounds an integer up to the nearest power of 2.
@@ -462,3 +463,5 @@ public extension simd_float4x4 {
     }
     
 }
+
+#endif

@@ -5,6 +5,7 @@
 //  Created by Philip Turner on 7/21/21.
 //
 
+#if canImport(Foundation)
 import Foundation
 
 public extension Array {
@@ -67,3 +68,5 @@ public func memset_pattern16<T>(_ __b: UnsafeMutablePointer<T>!, _ __pattern16: 
     var patternRef = __pattern16
     memset_pattern8(__b, &patternRef, count << 4)
 }
+
+#endif

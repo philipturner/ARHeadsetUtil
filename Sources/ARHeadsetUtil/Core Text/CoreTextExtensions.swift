@@ -5,6 +5,7 @@
 //  Created by Philip Turner on 7/22/21.
 //
 
+#if canImport(CoreText)
 import Foundation
 import CoreText
 
@@ -730,3 +731,5 @@ public extension CTTextTab {
     @inlinable @inline(__always) var location: Double { CTTextTabGetLocation(self) }
     @inlinable @inline(__always) var options: [CFString : Any] { CTTextTabGetOptions(self) as! Dictionary }
 }
+
+#endif
