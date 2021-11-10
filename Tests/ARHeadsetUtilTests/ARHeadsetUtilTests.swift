@@ -6,10 +6,13 @@ final class ARHeadsetUtilTests: XCTestCase {
         let testArray = [Int](unsafeUninitializedCount: 5)
         XCTAssertEqual(testArray.count, 5, "Array initializer failed")
         
+        #if canImport(CoreFoundation)
         let testRange = Range(CFRange(location: 0, length: 1))
         XCTAssertEqual(testRange.lowerBound, 0, "CFRange conversion failed")
         XCTAssertEqual(testRange.upperBound, 1, "CFRange conversion failed")
+        #endif
         
+        #if canImport(simd)
         XCTAssertEqual(roundUpToPowerOf2(7), 8, "Integer rounding utility failed")
         XCTAssertEqual(radiansToDegrees(0), 0, "Angle conversion utility failed")
         
@@ -25,5 +28,6 @@ final class ARHeadsetUtilTests: XCTestCase {
         
         let testBoolVector = simd_bool2(false, false)
         XCTAssertEqual(testBoolVector[0], false, "Boolean vector initializer failed")
+        #endif
     }
 }
