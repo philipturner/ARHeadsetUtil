@@ -54,7 +54,7 @@ public func memset_pattern4<T>(_ __b: UnsafeMutablePointer<T>!, _ __pattern4: T,
     assert(MemoryLayout<T>.stride == 4)
     
     var patternRef = __pattern4
-    memset_pattern8(__b, &patternRef, count << 2)
+    memset_pattern4(__b, &patternRef, count << 2)
 }
 
 @inlinable @inline(__always)
@@ -70,7 +70,7 @@ public func memset_pattern16<T>(_ __b: UnsafeMutablePointer<T>!, _ __pattern16: 
     assert(MemoryLayout<T>.stride == 16)
     
     var patternRef = __pattern16
-    memset_pattern8(__b, &patternRef, count << 4)
+    memset_pattern16(__b, &patternRef, count << 4)
 }
 
 #endif
