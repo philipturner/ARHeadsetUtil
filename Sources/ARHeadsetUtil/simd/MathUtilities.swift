@@ -5,14 +5,14 @@
 //  Created by Philip Turner on 4/13/21.
 //
 
-#if canImport(simd)
-import simd
-
 /// Rounds an integer up to the nearest power of 2.
 @inlinable @inline(__always)
 public func roundUpToPowerOf2(_ input: Int) -> Int {
     1 << (Int.bitWidth - max(0, input - 1).leadingZeroBitCount)
 }
+
+#if canImport(simd)
+import simd
 
 /// The color of black-body radiation at a specific temperature.
 @inlinable
