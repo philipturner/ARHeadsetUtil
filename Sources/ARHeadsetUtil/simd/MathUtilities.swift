@@ -11,6 +11,12 @@ public func roundUpToPowerOf2(_ input: Int) -> Int {
     1 << (Int.bitWidth - max(0, input - 1).leadingZeroBitCount)
 }
 
+/// Rounds an integer down to the nearest power of 2.
+@inlinable @inline(__always)
+public func roundDownToPowerOf2(_ input: Int) -> Int {
+    1 << (Int.bitWidth - 1 - input.leadingZeroBitCount)
+}
+
 #if canImport(simd)
 import simd
 
