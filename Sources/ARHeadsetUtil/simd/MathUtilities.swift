@@ -11,7 +11,7 @@ import simd
 /// Rounds an integer up to the nearest power of 2.
 @inlinable @inline(__always)
 public func roundUpToPowerOf2(_ input: Int) -> Int {
-    1 << (64 - max(0, input - 1).leadingZeroBitCount)
+    1 << (Int.bitWidth - max(0, input - 1).leadingZeroBitCount)
 }
 
 /// The color of black-body radiation at a specific temperature.
