@@ -12,6 +12,7 @@ The following open-source projects:
 - [AR MultiPendulum](https://github.com/philipturner/ar-multipendulum) - the first affordable AR headset experience
 - [Differentiation iOS Demo](https://github.com/philipturner/differentiation-ios-demo) - sample of Swift's automatic differentiation working on iOS
 - [DL4S](https://github.com/palle-k/DL4S) - high-level machine learning framework for Swift
+- [MetalFFT](https://github.com/philipturner/MetalFFT) - the Fast Fourier Transforms missing from Metal Performance Shaders
 
 If your open-source project depends on ARHeadsetKit or ARHeadsetUtil, please send a pull request to add it to this list!
 
