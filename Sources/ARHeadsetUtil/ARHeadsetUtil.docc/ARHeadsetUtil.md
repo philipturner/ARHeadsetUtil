@@ -8,10 +8,6 @@ See [ARHeadsetKit](https://github.com/philipturner/ARHeadsetKit).
 
 ## Topics
 
-### Metal Extensions
-
-- ``MTLLayeredBuffer``
-
 ### Math Utilities
 
 - <doc:simd-extensions>

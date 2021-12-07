@@ -1,6 +1,8 @@
 # ARHeadsetUtil
 
-A conglomeration of utility functions from [ARHeadsetKit](https://github.com/philipturner/ARHeadsetKit), brought to every Apple platform. These include [extensions](https://github.com/philipturner/ARHeadsetKit/blob/main/docs/extensions-to-apple-frameworks.md) to Metal, simd, and other frameworks that improve usability and make optimization easier. In addition, ARHeadsetUtil includes math utility functions that replace the `AAPLMathUtilities.m` library from Metal sample code.
+A conglomeration of utility functions from [ARHeadsetKit](https://github.com/philipturner/ARHeadsetKit), brought to every Apple platform. These include [extensions](https://github.com/philipturner/ARHeadsetKit/blob/main/docs/extensions-to-apple-frameworks.md) to Metal, simd, and other frameworks that improve usability and make optimization easier. In addition, ARHeadsetUtil includes math utility functions that replace the `AAPLMathUtilities.m` library from Metal sample code. 
+
+`MTLLayeredBuffer` is not included in this package. For more information, check out its [repository](https://github.com/philipturner/MTLLayeredBuffer) and [article](https://github.com/philipturner/ARHeadsetKit/blob/main/docs/articles/layered-buffer.md).
 
 ## Why was ARHeadsetUtil created?
 
